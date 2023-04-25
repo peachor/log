@@ -14,7 +14,7 @@ func TestLog(t *testing.T) {
 		log.Fatalf("create file log.txt failed: %v", err)
 	}
 
-	l := NewLog(logrus.TraceLevel, io.MultiWriter(os.Stdout, writerFile), true, &Formatter{PrintKey: true}).SetField("requestId", 123445)
+	l := NewLog().Init(logrus.TraceLevel, io.MultiWriter(os.Stdout, writerFile), false, &Formatter{PrintKey: false}).SetField("requestId", 123445)
 
 	l.Trace("trace msg")
 	l.Debug("debug msg")

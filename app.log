@@ -1,0 +1,42 @@
+[2023/04/25 11:23:18.736] [T] [requestId:123445] trace msg
+[2023/04/25 11:23:18.742] [D] [requestId:123445] debug msg
+[2023/04/25 11:23:18.742] [I] [requestId:123445] info msg
+[2023/04/25 11:23:18.742] [W] [requestId:123445] warn msg
+[2023/04/25 11:23:18.742] [E] [requestId:123445] error msg
+[2023/04/25 11:23:18.742] [F] [requestId:123445] fatal msg
+[2023/04/25 13:10:44.048] [T] [requestId:123445] trace msg
+[2023/04/25 13:10:44.053] [D] [requestId:123445] debug msg
+[2023/04/25 13:10:44.053] [I] [aaaaa:github.com/peachor/log.TestLog] [bbbb:21] [requestId:123445] info msg
+[2023/04/25 13:10:44.054] [W] [aaaaa:github.com/peachor/log.TestLog] [bbbb:21] [requestId:123445] warn msg
+[2023/04/25 13:10:44.054] [E] [aaaaa:github.com/peachor/log.TestLog] [bbbb:21] [requestId:123445] error msg
+[2023/04/25 13:10:44.054] [F] [aaaaa:github.com/peachor/log.TestLog] [bbbb:21] [requestId:123445] fatal msg
+[2023/04/25 13:12:33.668] [T] [requestId:123445] trace msg
+[2023/04/25 13:12:33.674] [D] [requestId:123445] debug msg
+[2023/04/25 13:12:33.674] [I] [bbbb:D:/GoSpace/rebuild/log/log_test.go] [ccc:21] [file:github.com/peachor/log.TestLog] [requestId:123445] info msg
+[2023/04/25 13:12:33.674] [W] [bbbb:D:/GoSpace/rebuild/log/log_test.go] [ccc:21] [file:github.com/peachor/log.TestLog] [requestId:123445] warn msg
+[2023/04/25 13:12:33.675] [E] [bbbb:D:/GoSpace/rebuild/log/log_test.go] [ccc:21] [file:github.com/peachor/log.TestLog] [requestId:123445] error msg
+[2023/04/25 13:12:33.675] [F] [bbbb:D:/GoSpace/rebuild/log/log_test.go] [ccc:21] [file:github.com/peachor/log.TestLog] [requestId:123445] fatal msg
+[2023/04/25 13:14:54.870] [T] [requestId:123445] trace msg
+[2023/04/25 13:14:54.876] [D] [requestId:123445] debug msg
+[2023/04/25 13:14:54.876] [I] [file:github.com/peachor/log.TestLog:21] [requestId:123445] info msg
+[2023/04/25 13:14:54.876] [W] [file:github.com/peachor/log.TestLog:22] [requestId:123445] warn msg
+[2023/04/25 13:14:54.876] [E] [file:github.com/peachor/log.TestLog:23] [requestId:123445] error msg
+[2023/04/25 13:14:54.876] [F] [file:github.com/peachor/log.TestLog:24] [requestId:123445] fatal msg
+[2023/04/25 13:15:07.169] [T] [requestId:123445] trace msg
+[2023/04/25 13:15:07.174] [D] [requestId:123445] debug msg
+[2023/04/25 13:15:07.174] [I] [file:github.com/peachor/log.TestLog:21] [requestId:123445] info msg
+[2023/04/25 13:15:07.175] [W] [file:github.com/peachor/log.TestLog:22] [requestId:123445] warn msg
+[2023/04/25 13:15:07.175] [E] [file:github.com/peachor/log.TestLog:23] [requestId:123445] error msg
+[2023/04/25 13:15:07.175] [F] [file:github.com/peachor/log.TestLog:24] [requestId:123445] fatal msg
+[2023/04/25 13:15:30.309] [T] [requestId:123445] trace msg
+[2023/04/25 13:15:30.314] [D] [requestId:123445] debug msg
+[2023/04/25 13:15:30.315] [I] [file:github.com/peachor/log.TestLog:21] [requestId:123445] info msg
+[2023/04/25 13:15:30.315] [W] [file:github.com/peachor/log.TestLog:22] [requestId:123445] warn msg
+[2023/04/25 13:15:30.315] [E] [file:github.com/peachor/log.TestLog:23] [requestId:123445] error msg
+[2023/04/25 13:15:30.315] [F] [file:github.com/peachor/log.TestLog:24] [requestId:123445] fatal msg
+[2023/04/25 13:16:36.126] [T] [123445] trace msg
+[2023/04/25 13:16:36.133] [D] [123445] debug msg
+[2023/04/25 13:16:36.133] [I] [github.com/peachor/log.TestLog:21] [123445] info msg
+[2023/04/25 13:16:36.133] [W] [github.com/peachor/log.TestLog:22] [123445] warn msg
+[2023/04/25 13:16:36.133] [E] [github.com/peachor/log.TestLog:23] [123445] error msg
+[2023/04/25 13:16:36.133] [F] [github.com/peachor/log.TestLog:24] [123445] fatal msg

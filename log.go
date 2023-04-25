@@ -3,6 +3,8 @@ package log
 import (
 	"github.com/sirupsen/logrus"
 	"io"
+	"runtime"
+	"strconv"
 )
 
 var g_logger *logrus.Logger
@@ -61,60 +63,109 @@ func (receiver *Log) Debug(args ...interface{}) {
 
 //INFO
 func (receiver *Log) Info(args ...interface{}) {
+
+	pc, _, lineNo, ok := runtime.Caller(1)
+	if ok {
+		receiver.fields["file"] = runtime.FuncForPC(pc).Name() + ":" + strconv.Itoa(lineNo)
+	}
 	g_logger.WithFields(receiver.fields).Info(args...)
 }
 
 //WARN
 func (receiver *Log) Warn(args ...interface{}) {
+	pc, _, lineNo, ok := runtime.Caller(1)
+	if ok {
+		receiver.fields["file"] = runtime.FuncForPC(pc).Name() + ":" + strconv.Itoa(lineNo)
+	}
 	g_logger.WithFields(receiver.fields).Warn(args...)
 }
 
 //ERROR
 func (receiver *Log) Error(args ...interface{}) {
+	pc, _, lineNo, ok := runtime.Caller(1)
+	if ok {
+		receiver.fields["file"] = runtime.FuncForPC(pc).Name() + ":" + strconv.Itoa(lineNo)
+	}
 	g_logger.WithFields(receiver.fields).Error(args...)
 }
 
 //FATAL
 func (receiver *Log) Fatal(args ...interface{}) {
+	pc, _, lineNo, ok := runtime.Caller(1)
+	if ok {
+		receiver.fields["file"] = runtime.FuncForPC(pc).Name() + ":" + strconv.Itoa(lineNo)
+	}
 	g_logger.WithFields(receiver.fields).Fatal(args...)
 }
 
 //Panic
 func (receiver *Log) Panic(args ...interface{}) {
+	pc, _, lineNo, ok := runtime.Caller(1)
+	if ok {
+		receiver.fields["file"] = runtime.FuncForPC(pc).Name() + ":" + strconv.Itoa(lineNo)
+	}
 	g_logger.WithFields(receiver.fields).Panic(args...)
 }
 
 //TRACEf
 func (receiver *Log) Tracef(format string, args ...interface{}) {
+	pc, _, lineNo, ok := runtime.Caller(1)
+	if ok {
+		receiver.fields["file"] = runtime.FuncForPC(pc).Name() + ":" + strconv.Itoa(lineNo)
+	}
 	g_logger.WithFields(receiver.fields).Tracef(format, args...)
 }
 
 //DEBUGf
 func (receiver *Log) Debugf(format string, args ...interface{}) {
+	pc, _, lineNo, ok := runtime.Caller(1)
+	if ok {
+		receiver.fields["file"] = runtime.FuncForPC(pc).Name() + ":" + strconv.Itoa(lineNo)
+	}
 	g_logger.WithFields(receiver.fields).Debugf(format, args...)
 }
 
 //INFOf
 func (receiver *Log) Infof(format string, args ...interface{}) {
+	pc, _, lineNo, ok := runtime.Caller(1)
+	if ok {
+		receiver.fields["file"] = runtime.FuncForPC(pc).Name() + ":" + strconv.Itoa(lineNo)
+	}
 	g_logger.WithFields(receiver.fields).Infof(format, args...)
 }
 
 //WARNf
 func (receiver *Log) Warnf(format string, args ...interface{}) {
+	pc, _, lineNo, ok := runtime.Caller(1)
+	if ok {
+		receiver.fields["file"] = runtime.FuncForPC(pc).Name() + ":" + strconv.Itoa(lineNo)
+	}
 	g_logger.WithFields(receiver.fields).Warnf(format, args...)
 }
 
 //ERRORf
 func (receiver *Log) Errorf(format string, args ...interface{}) {
+	pc, _, lineNo, ok := runtime.Caller(1)
+	if ok {
+		receiver.fields["file"] = runtime.FuncForPC(pc).Name() + ":" + strconv.Itoa(lineNo)
+	}
 	g_logger.WithFields(receiver.fields).Errorf(format, args...)
 }
 
 //FATALf
 func (receiver *Log) Fatalf(format string, args ...interface{}) {
+	pc, _, lineNo, ok := runtime.Caller(1)
+	if ok {
+		receiver.fields["file"] = runtime.FuncForPC(pc).Name() + ":" + strconv.Itoa(lineNo)
+	}
 	g_logger.WithFields(receiver.fields).Fatalf(format, args...)
 }
 
 //Panicf
 func (receiver *Log) Panicf(format string, args ...interface{}) {
+	pc, _, lineNo, ok := runtime.Caller(1)
+	if ok {
+		receiver.fields["file"] = runtime.FuncForPC(pc).Name() + ":" + strconv.Itoa(lineNo)
+	}
 	g_logger.WithFields(receiver.fields).Panicf(format, args...)
 }
